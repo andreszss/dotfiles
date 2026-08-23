@@ -39,5 +39,5 @@ input type:keyboard {
     xkb_layout "latam"
 }
 
-exec_always wbg -s ~/imagenes/wallpapers/wal66.png
+exec_always wbg -s ~/imagenes/wallpapers/wal12.jpg
 output eDP-1 mode --custom 1920x1080@68Hz
