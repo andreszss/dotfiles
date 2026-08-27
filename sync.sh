@@ -21,21 +21,14 @@ prompt() {
 }
 
 link() {
-	cp ~/.config/foot/foot.ini ./foot/
-	cp ~/.config/sway/config ./sway/
 	cp ~/.vimrc ./vim/.vimrc 
 	rm ./wallpapers/*
 	cp ~/imagenes/wallpapers/* ./wallpapers
-	cp ~/.profile ./home/
-	cp ~/.rc ./home/
-	cp ~/.asoundrc ./home/
+	cp ~/.bash_profile ./home/
+	cp ~/.bashrc ./home/
 }
 
 install() {
-	mkdir -p ~/.config/foot
-	cp ./foot/foot.ini ~/.config/foot/foot.ini
-	mkdir -p ~/.config/sway
-	cp ./sway/config ~/.config/sway/config
 	cp ./vim/.vimrc ~/.vimrc
 	mkdir -p ~/imagenes/wallpapers
 	cp ./wallpapers/* ~/imagenes/wallpapers

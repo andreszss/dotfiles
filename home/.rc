@@ -1,3 +1,0 @@
-read -r _b < /home/diego/.cache/current-palette
-printf '%s' "$_b"
-unset _b 
