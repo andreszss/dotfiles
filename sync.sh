@@ -24,15 +24,12 @@ link() {
 	cp ~/.vimrc ./vim/.vimrc 
 	rm ./wallpapers/*
 	cp ~/imagenes/wallpapers/* ./wallpapers
-	cp ~/.bash_profile ./home/
-	cp ~/.bashrc ./home/
 }
 
 install() {
 	cp ./vim/.vimrc ~/.vimrc
 	mkdir -p ~/imagenes/wallpapers
 	cp ./wallpapers/* ~/imagenes/wallpapers
-	cp ./home/.* ~
 }
 
 g() {
@@ -52,7 +49,7 @@ main() {
 		prompt
 		g
 	elif [ "$1" = install ]; then
-		war you are about to install the dotfiles, if you have dotfiles in sway, foot, vim, etc, these will be overwritten
+		war you are about to install the dotfiles, if you have dotfiles in vim, these will be overwritten
 		prompt
 		if install > log.log 2>&1; then
 			log "dotfiles installed successfully"
