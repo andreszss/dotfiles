@@ -1,0 +1,16 @@
+background-color=#110c05
+text-color=#ffffff
+border-color=#ffffff
+border-size=2
+border-radius=0
+font=monospace 10
+height=100
+width=300
+margin=10
+padding=10
+default-timeout=5000
+
+[urgency=high]
+border-color=#ffffff
+background-color=#ffffff
+text-color=#000000

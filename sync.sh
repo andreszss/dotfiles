@@ -21,16 +21,29 @@ prompt() {
 }
 
 link() {
-	cp ~/.vimrc ./vim/.vimrc 
 	rm ./wallpapers/*
+	cp ~/.vimrc ./vim/.vimrc 
 	cp ~/imagenes/wallpapers/* ./wallpapers
+	cp ~/.config/sway/config ./sway
+	cp ~/.config/foot/foot.ini ./foot
+	cp ~/.config/mako/ini ./mako
+	cp ~/.bashrc ./home
+	cp ~/.bash_logout ./home
+	cp ~/.bash_profile ./home
 }
 
 install() {
+	mkdir -p ~/imagenes/wallpaper
+	mkdir -p ~/.config/sway
+	mkdir -p ~/.config/foot
+	mkdir -p ~/.config/mako
 	cp ./vim/.vimrc ~/.vimrc
-	mkdir -p ~/imagenes/wallpapers
 	cp ./wallpapers/* ~/imagenes/wallpapers
+	cp ./sway/config ~/.config/sway/config
+	cp ./foot/foot.ini ~/.config/foot/foot.ini
+	cp ./mako/ini ~/.config/mako/ini
 }
+
 
 g() {
 	git pull
@@ -49,7 +62,7 @@ main() {
 		prompt
 		g
 	elif [ "$1" = install ]; then
-		war you are about to install the dotfiles, if you have dotfiles in vim, these will be overwritten
+		war you are about to install the dotfiles, if you have dotfiles in sway, foot, mako, vim, these will be overwritten
 		prompt
 		if install > log.log 2>&1; then
 			log "dotfiles installed successfully"

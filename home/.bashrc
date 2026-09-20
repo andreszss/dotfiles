@@ -1,0 +1,5 @@
+[[ $- != *i* ]] && return
+
+read -r _b < ~/.cache/current-palette
+printf '%s' "$_b"
+unset _b
