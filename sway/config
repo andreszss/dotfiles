@@ -41,6 +41,5 @@ input type:keyboard {
     xkb_layout "latam"
 }
 
-#exec_always wbg -s ~/imagenes/otros/wallpaper.jpg
 exec mako -c ~/.config/mako/ini
 exec_always swaybg -m fill -i ~/imagenes/otros/wallpaper.png

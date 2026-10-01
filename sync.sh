@@ -21,9 +21,8 @@ prompt() {
 }
 
 link() {
-	rm ./wallpapers/*
+	rm ./wallpaper.png 2>/dev/null; rm ./wallpaper.jpg 2>/dev/null; cp ~/imagenes/otros/wallpaper.png . 2>/dev/null; cp ~/imagenes/otros/wallpaper.jpg . 2>/dev/null
 	cp ~/.vimrc ./vim/.vimrc 
-	cp ~/imagenes/wallpapers/* ./wallpapers
 	cp ~/.config/sway/config ./sway
 	cp ~/.config/foot/foot.ini ./foot
 	cp ~/.config/mako/ini ./mako
