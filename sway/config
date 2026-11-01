@@ -8,7 +8,7 @@ floating_modifier $mod normal
 
 bindsym $mod+Return exec foot
 bindsym $mod+q kill
-bindsym $mod+d exec wmenu-run
+bindsym $mod+d exec wmenu-run -f "CaskaydiaCove NFM 12" -N 19140b -n c5c4c2 -M 19140b -m 64615e -S 64615e -s 19140b
 bindsym $mod+s exec scr full
 bindsym $mod+Shift+s exec scr geometry
 bindsym $mod+Shift+r reload
